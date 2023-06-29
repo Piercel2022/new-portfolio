@@ -37,7 +37,7 @@ REQUIRED SECTIONS:
 - [📝 License](#license)
 
 
-**[Portfolio]* is a website  to showcase my extensive collection of creative design projects. With a seamless blend of aesthetics and functionality, my website portfolio serves as a visual representation of my skills and expertise in Full-stack web development. From captivating branding projects to innovative web designs, each showcased work.
+**[Portfolio]** is a website  to showcase my extensive collection of creative design projects. With a seamless blend of aesthetics and functionality, my website portfolio serves as a visual representation of my skills and expertise in Full-stack web development. From captivating branding projects to innovative web designs, each showcased work.
 
 ## 🛠 Built With <a name="built-with"></a>
 
