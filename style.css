@@ -65,7 +65,7 @@ a {
 
 .headline {
   height: 718px;
-  background-image: url(assets/header-shapesmobile.png);
+  background-image: url(assets/images/header-shapesmobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
@@ -402,7 +402,7 @@ i:hover {
   background-color: #6070ff;
   width: 100%;
   margin-top: 113px;
-  background-image: url(assets/contacts.png);
+  background-image: url(assets/images/contacts.png);
   background-size: 100% 100%;
 }
 
@@ -649,7 +649,7 @@ textarea::placeholder {
   }
 
   .headline {
-    background-image: url(assets/Headerbg.png);
+    background-image: url(assets/images/Headerbg.png);
     background-size: contain;
     background-repeat: no-repeat;
     border-bottom-left-radius: 160px;
@@ -722,7 +722,7 @@ textarea::placeholder {
     width: 100%;
     margin-top: 113px;
     height: 846px;
-    background-image: url(assets/contactbg.png);
+    background-image: url(assets/images/contactbg.png);
     background-size: cover;
   }
 
