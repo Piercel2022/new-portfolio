@@ -1,151 +1,607 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
-    <title>Piercel Moussa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/bc4d064067.js" crossorigin="anonymous"></script>
+  <title>Piercel Moussa</title>
 </head>
+
 <body>
-    <header>
-          <nav>
-            <a  class="logo" href="">
-              <h4>Piercel Moussa</h4>
+  <div id="modal" class="modal hide">
+    <i id="close-ico" class="close-ico far fa-times-circle"></i>
+    <div class="item-top">
+      <h2 id="modal-title" data-item="true" class="item-title">Item title</h2>
+      <ul id="modal-subtitle" data-item="true" class="item-subtitle">
+        <li data-item="true">Company</li>
+        <li data-item="true">Stack info</li>
+        <li data-item="true">Year</li>
+      </ul>
+    </div>
+    <figure data-item="true" class="item-img">
+      <img id="modal-img" data-item="true"
+        src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+    </figure>
+    <div data-item="true" class="item-desc">
+      <p id="modal-desc" data-item="true" class="item-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
+        doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
+        obcaecati incidunt?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
+        doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
+        obcaecati incidunt?
+      </p>
+      <div class="item-side">
+        <h3 class="blue tags-title">Stack:</h3>
+        <ul id="modal-stack" data-item="true" class="item-tags">
+          <li data-item="true" class="tag">html</li>
+          <li data-item="true" class="tag">javascript</li>
+          <li data-item="true" class="tag">css</li>
+        </ul>
+        <hr />
+        <div class="item-links">
+          <a id="modal-live" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+            href="https://metrics2022.netlify.app/">
+            <span>See live</span>
+            <i class="fas fa-external-link-alt"></i>
           </a>
-          <i class="hamburger bi bi-list"></i>
-            <ul class="items">
-              <li class="close"><i class="bi bi-x-lg"></i></li>
-              <li class="item"><a href="#Portfolio" class="link">Portfolio</a></li>
-              <li class="item"><a href="#about" class="link">About</a></li>
-              <li class="item"><a href="#contact" class="link">Contact</a></li>
+          <a id="modal-repo" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+            href="https://github.com/Piercel2022/metrics-webapp">
+            <span>See source</span>
+            <i class="fab fa-github"></i>
+          </a>
+          <button id="back" type="button" class="item-btn">
+            <span>Go Back</span>
+            <i class="fas fa-chevron-circle-left"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="click-catcher" class="hide click-catcher"></div>
+  <nav id="nav--mobile" class="hide nav--mobile">
+    <ul class="nav-links">
+      <li id="nav-close" class="nav-link nav-close">
+        <i class="fas fa-times"></i>
+      </li>
+      <li class="nav-link">
+        <a class="mobile-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-link">
+        <a class="mobile-link" href="#about">About</a>
+      </li>
+      <li class="nav-link">
+        <a class="mobile-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="main" class="main">
+    <nav class="nav" id="nav">
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a class="nav-logo" href="#">Piercel Moussa</a>
+        </li>
+        <li class="list-padding">
+
+        </li>
+        <li id="nav-expand" class="nav-link nav-expand">
+          <i class="fas fa-bars"></i>
+        </li>
+        <li class="nav-link">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-link">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="section section--round-bl">
+      <div class="bg-animated">
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="element-1">
+          <svg class="straight" width="90" height="93" viewBox="0 0 90 93" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.601562" y="78.9232" width="108.669" height="19.4403"
+              transform="rotate(-46.1415 0.601562 78.9232)" fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="90" height="69" viewBox="0 0 90 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.9842 0.0740829C11.7936 9.88918 11.6736 20.967 15.6508 30.8705C19.6279 40.774 27.3763 48.692 37.1914 52.8826C47.0065 57.0732 58.0843 57.1931 67.9878 53.216C77.8913 49.2389 85.8093 41.4905 89.9999 31.6754L15.9842 0.0740829Z"
+              fill="#6070FF" />
+          </svg>
+        </div>
+        <div class="element-2">
+          <svg class="straight" width="201" height="143" viewBox="0 0 201 143" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect y="102" width="204" height="47" transform="rotate(-30 0 102)" fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="210" height="213" viewBox="0 0 210 213" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M209.581 57.0278C200.949 41.7052 188.83 28.6308 174.205 18.863C159.581 9.09529 142.861 2.90884 125.401 0.804592C107.94 -1.29966 90.2299 0.737445 73.7033 6.75095C57.1767 12.7645 42.2984 22.5853 30.2733 35.4184C18.2481 48.2515 9.41404 63.736 4.48635 80.6183C-0.441345 97.5005 -1.32415 115.306 1.90941 132.593C5.14297 149.88 12.402 166.162 23.0988 180.122C33.7955 194.081 47.6293 205.326 63.4801 212.945L84.3582 169.508C75.3281 165.168 67.447 158.762 61.3531 150.809C55.2591 142.856 51.1237 133.58 49.2815 123.732C47.4394 113.883 47.9423 103.74 50.7496 94.1219C53.5569 84.5041 58.5896 75.6825 65.4404 68.3716C72.2911 61.0606 80.7672 55.4656 90.1824 52.0397C99.5976 48.6138 109.687 47.4533 119.634 48.6521C129.582 49.8509 139.107 53.3753 147.438 58.94C155.77 64.5046 162.674 71.9532 167.592 80.6824L209.581 57.0278Z"
+              fill="#6070FF" />
+          </svg>
+        </div>
+        <div class="element-3">
+          <svg class="straight" width="57" height="23" viewBox="0 0 57 23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="56.0124" height="10.0203"
+              transform="matrix(0.977401 -0.211395 -0.211395 -0.977401 2.25342 22.5715)" fill="#6070FF" />
+          </svg>
+          <svg class="round" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11.5" cy="11.5" r="11.5" fill="#EBEBFF" />
+          </svg>
+        </div>
+        <div class="element-4">
+          <svg class="straight" width="160" height="91" viewBox="0 0 160 91" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="11.4399" width="161.407" height="28.875" transform="rotate(23.34 11.4399 0)" fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="23.5" cy="23.5" r="23.5" fill="#6070FF" />
+          </svg>
+        </div>
+        <div class="element-5">
+          <svg class="straight" width="57" height="57" viewBox="0 0 57 57" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M45.2341 44.7825C47.5564 42.0166 49.1946 38.7426 50.0163 35.2258C50.8379 31.7089 50.8197 28.048 49.9633 24.5395C49.1069 21.0309 47.4363 17.7734 45.0868 15.0305C42.7373 12.2877 39.7748 10.1368 36.4394 8.7518C33.1039 7.36684 29.4892 6.78681 25.8879 7.05868C22.2866 7.33055 18.7999 8.44668 15.7102 10.3167C12.6205 12.1867 10.0146 14.7581 8.10345 17.8225C6.19233 20.887 5.02972 24.3584 4.70976 27.9558L14.5678 28.8326C14.7501 26.7832 15.4124 24.8055 16.5012 23.0597C17.5899 21.3139 19.0745 19.849 20.8347 18.7836C22.5949 17.7183 24.5813 17.0824 26.6329 16.9275C28.6846 16.7726 30.7439 17.1031 32.6441 17.8921C34.5443 18.6811 36.232 19.9065 37.5705 21.4691C38.909 23.0317 39.8608 24.8875 40.3487 26.8863C40.8366 28.8851 40.8469 30.9707 40.3788 32.9743C39.9108 34.9778 38.9774 36.843 37.6545 38.4188L45.2341 44.7825Z"
+              fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="39" height="21" viewBox="0 0 39 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.15526 -7.03308e-05C1.82088 4.88119 3.43927 9.69535 6.65441 13.3834C9.86953 17.0714 14.418 19.3311 19.2993 19.6655C24.1806 19.9999 28.9947 18.3815 32.6827 15.1664C36.3707 11.9512 38.6305 7.40273 38.9649 2.52147L2.15526 -7.03308e-05Z"
+              fill="#6070FF" />
+          </svg>
+        </div>
+      </div>
+      <header class="header">
+        <main>
+          <h1 class="header-title">
+            <span class="full">I'm Pierre </span>
+            <span class="the">The</span><span class="professional"></span> Full-stack Web Developer
+          </h1>
+          <p class="header-body">
+            <span>
+              I'm a certified web developer who <span class="blue">enjoys building</span> interactive interfaces with
+              Javascript, Ruby on Rails, and React.
+            </span>
+            <span>
+              I’m  a Back-end Engineer, who enjoys building solutions for medium-sized businesses using <span class="blue">Rails and
+                PostgreSQL</span>.
+            </span>
+            <span>
+              I'm open to Front-end or Back-end  remote opportunities with
+              digital-product teams whilst I’m already completing my <span class="blue">Full-stack Web Development world class curriculum at Microverse
+                .</span>
+            </span>
+          </p>
+        </main>
+        <aside>
+          <a href="#portfolio" class="item-btn view">
+            
+          </a>
+          <p class="uppercase--blue">Let's connect</p>
+          <ul class="social-links">
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sarah_chamorro">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/piercelestinmax/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://medium.com/@piercel.coder2022">
+                <i class="fab fa-medium-m"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Piercel2022">
+                <i class="fab fa-github-alt"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://angel.co/u/pierre-celestin-moussa">
+                <i class="fab fa-angellist"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </header>
+    </section>
+    <section id="portfolio" class="section section--vertical section--transparent">
+      <h2 class="item-title section-title"> </h2>
+      <article id="project-1" data-item="webmetrics" class="item">
+        <figure data-item="webmetrics" class="item-img item-img--center">
+          <img data-item="webmetrics" src="./images/portfolio1.png" />
+        </figure>
+        <div data-item="webmetrics" class="item-desc">
+          <h2 data-item="webmetrics" class="item-title">Metrics WEBAPP</h2>
+          <ul data-item="webmetrics" class="item-subtitle">
+            <li data-item="webmetrics">Microverse</li>
+            <li data-item="webmetrics">2023</li>
+          </ul>
+          <p data-item="webmetrics" class="item-description">
+            Web metrics is a dynamic and interactive user interface created with react build with the most accurate financial data API, that show a user data from differents companies. 
+          </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="webmetrics" class="item-tags">
+            <li data-item="webmetrics" class="tag">React</li>
+            <li data-item="webmetrics" class="tag">Redux</li>
+            <li data-item="webmetrics" class="tag">JavaScript</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://metrics2022.netlify.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/Piercel2022/metrics-webapp">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="webmetrics">
+              <span data-item="webmetrics">Read more</span>
+              <i data-item="webmetrics" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-2" data-item="blog" class="item">
+        <figure data-item="blog" class="item-img item-img--center">
+          <img data-item="blog" src="./images/portfolio2.png" />
+        </figure>
+        <div data-item="blog" class="item-desc">
+          <h2 data-item="blog" class="item-title">BLOG</h2>
+          <ul data-item="blog" class="item-subtitle">
+            <li data-item="blog">Full-stack Developer</li>
+            <li data-item="blog">2023</li>
+          </ul>
+          <p data-item="blog" class="item-description">
+            A mobile-first SPA Rails and React web-app for remote meetups that let users create, favorite, and browse a
+            catalog of meetings and groups. The API was built with Rails and the client with React and Redux. </p>
+          
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="blog" class="item-tags">
+            <li data-item="blog" class="tag">NextJS</li>
+            <li data-item="blog" class="tag">MarkDown</li>
+            <li data-item="blog" class="tag">TypeScript</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://react-rails.netlify.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/Piercel2022/Blog-starter">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="blog">
+              <span data-item="blog">Read more</span>
+              <i data-item="blog" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-3" data-item="budget" class="item">
+        <figure data-item="budget" class="item-img item-img--center">
+          <img data-item="budget" src="./images/portfolio3.png" />
+        </figure>
+        <div data-item="budget" class="item-desc">
+          <h2 data-item="budget" class="item-title">PIERCEL-BUDGET</h2>
+          <ul data-item="budget" class="item-subtitle">
+            <li data-item="budget">Microverse</li>
+            <li data-item="budget">2023</li>
+          </ul>
+          <p data-item="budget" class="item-description">
+            A Phaser3 game with stored score data with Leaderboard API service and original assets that let users play
+            as a tentacle sea creature and shoot/squeeze divers. </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="budget" class="item-tags">
+            <li data-item="budget" class="tag">Rails</li>
+            <li data-item="budget" class="tag">JavaScript</li>
+            <li data-item="budget" class="tag">Webpack</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://depths.web.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/from-the-depths">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="budget">
+              <span data-item="budget">Read more</span>
+              <i data-item="budget" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-4" data-item="space" class="item">
+        <figure data-item="space" class="item-img">
+          <img data-item="space" src="./images/portfolio4.png" />
+        </figure>
+        <div data-item="space" class="item-desc">
+          <h2 data-item="space" class="item-title">SPACE TRAVELER</h2>
+          <ul data-item="space" class="item-subtitle">
+            <li data-item="space">Microverse</li>
+            <li data-item="space">2022</li>
+          </ul>
+          <p data-item="space" class="item-description">
+            A breakfast restaurant page with client-side which allows users to toggle between the restaurant about page,
+            menu, and contact information.
+          </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="space" class="item-tags">
+            <li data-item="space" class="tag">JavaScript</li>
+            <li data-item="space" class="tag">Webpack</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://spacetraveleryun.netlify.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/Piercel2022/Space-Traveler">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="space">
+              <span data-item="space">Read more</span>
+              <i data-item="space" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-5" data-item="tic" class="item">
+        <figure data-item="tic" class="item-img">
+          <img data-item="tic" src="./images/portfolio5.png" />
+        </figure>
+        <div data-item="tic" class="item-desc">
+          <h2 data-item="tic" class="item-title">Tic Tac Toe</h2>
+          <ul data-item="tic" class="item-subtitle">
+            <li data-item="tic">React</li>
+            <li data-item="tic">2023</li>
+          </ul>
+          <p data-item="tic" class="item-description">
+            Tic tac toe, also known as noughts and crosses, is a classic paper-and-pencil game played on a grid of 3x3 squares. Overall, tic-tac-toe is a simple yet enjoyable game that tests players' ability to think strategically and anticipate their opponent's moves.
+          </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="tic" class="item-tags">
+            <li data-item="tic" class="tag">React</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/Piercel2022/tic-tac-toe">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://titato23.netlify.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="tic">
+              <span data-item="tic">Read more</span>
+              <i data-item="tic" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="about" class="section section-about section--round-tr section--shadow-b-light">
+      <article class="about">
+        <div class="about-description">
+          <h2>About Myself</h2>
+          <p>
+            I'm a certified full-stack developer (@Microverse) with a B.A. in Design and experience in UX and Customer
+            Success.
+            Currently continuing my Computer Science education (@Cruziero do Sul Virtual).
+            <br />
+            <br />
+            I have a passion for problem-solving, and a knack for debugging, and love to learn new tools and
+            technologies.
+            <br />
+          </p>
+          <aside>
+            <p class="uppercase--blue">Let's connect</p>
+            <ul class="social-links">
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sarah_chamorro">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/uryelah/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://medium.com/@sarahchamorro/level-up-your-css-game-today-making-a-game-with-no-javascript-d21fea6756e6">
+                  <i class="fab fa-medium-m"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/uryelah">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://angel.co/u/sarah-chamorro">
+                  <i class="fab fa-angellist"></i>
+                </a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="main-section">
-            <section class="headline">
-            <article>
-                <h1 class="headline-head">I’m Pierre <br>
-                    Glad to see you!</h1>
-                <p class="healing-article">
-                  Dynamic and detail-oriented Software Developer
-                   with a knack for conceptualizing and delivering elegant,
-                    user-friendly solutions effectively and efficiently.
-                    Enjoy building powerful web applications, learning new technologies,
-                     and improving overall knowledge.
-                       A team player but do not shy away from working as an individual contributor.
-                </p>
-                <section class="connect">
-                  <p class="text-connect">
-                    <a href="#contact" class="link">LET'S CONNECT</a>
-                  </p>
-                    <ul>
-                        <li><a href="https://twitter.com/pier_celestin"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/piercelestinmax/"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="https://medium.com/@piercel.coder2022" ><i class="bi bi-medium"></i></a></li>
-                        <li><a href="https://github.com/Piercel2022"><i class="bi bi-github"></i></a></li>
-                        <li><a href="#"><i class="bi bi-angellist"></i></a></li>
-                    </ul>
-                </section>
-            </article>
-            </section>
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/document/d/1Kw8gHHLybQsuuwY2n4BATHhianJe_OkjNmsrm1lEhis/edit?usp=sharing"
+              class="item-btn">
+              Get My Resume
+            </a>
+          </aside>
+        </div>
+      </article>
+      <div class="about-skills">
+        <input checked="true" type="radio" name="drops" id="null" class="drop" />
+        <input type="radio" name="drops" id="languages" class="drop drop-languages" />
+        <input type="radio" name="drops" id="frameworks" class="drop drop-frameworks" />
+        <input type="radio" name="drops" id="skills" class="drop drop-skills" />
 
-            <section id="Portfolio" class="work">
-            </section>
-            <section class="aboutme-contact">
-              <section id="about" class="aboutme">
-
-                    <article class="aboutme-article">
-                        <h2>About  <br>Myself</h2>
-                        <p>
-                          I have a passion for design and enjoy creating interactive experiences for users. Specifically,
-                          I have experience in frontend development, from designing the user interface and
-                          user experience to the actual development process. There is something genuinely
-                          satisfying about bringing a project to life and seeing others use it. If you
-                          like what you see and have a project you need to be built, don’t hesitate to contact me.</p>
-                        <section class="connect">
-                          <p class="text-connect">
-                            <a href="#contact" class="link">LET'S CONNECT</a>
-                          </p>
-                            <ul>
-                                <li><a href="https://twitter.com/pier_celestin" tabindex="17"><i class="bi bi-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/piercelestinmax/" tabindex="18"><i class="bi bi-linkedin"></i></a></li>
-                                <li><a href="https://medium.com/@piercel.coder2022" tabindex="19" ><i class="bi bi-medium"></i></a></li>
-                                <li><a href="https://github.com/Piercel2022" tabindex="20"><i class="bi bi-github"></i></a></li>
-                                <li><a href="#" tabindex="21"><i class="bi bi-angellist"></i></a></li>
-                            </ul>
-                        </section>
-                        <a href="https://docs.google.com/document/d/1oMh251bsdZSiqvy6h-ZhsLlujRvhJMTRPhLC99izroA/edit?usp=sharing" class='btn'>Get my resume</a>
-                    </article>
-                    <ul id="my-info">
-                        <li class="list resume-languages open">
-                          <button class="lang-container accordion">
-                              Languages
-                             <img src="assets/images/icon-down.png" alt="dropdown-downicon">
-                            </button>
-                          <ul class="lang-list firstacc">
-                            <li class="list-item">
-                                <img src="assets/images/javascripts.png" alt="JavaScript-logo">
-                                JavaScript</li>
-                            <li class="list-item">
-                                <img src="assets/images/html_plain.png" alt="html-logo">
-                                HTML</li>
-                            <li class="list-item">
-                              <img src="assets/images/css_plain.png" alt="css-logo">
-                              CSS</li>
-                              <li class="list-item">
-                                <img src="assets/images/ruby.png" alt="ruby-logo">
-                                Ruby</li>
-                          </ul>
-                        </li>
-                        <li class="resume-list frameworks">
-                          <button class="lang-container accordion">
-                              Frameworks
-                            <img src="assets/images/icon-down.png" alt="dropdown-righticon">
-                          </button>
-                          <ul class="lang-list ">
-                            <li class="list-item">
-                                <img src="assets/images/react_original.svg" alt="react-logo">
-                                React</li>
-                            <li class="list-item">
-                                <img src="assets/images/tailwind.svg" alt="rails-logo">
-                                Tailwind</li>
-                            <li class="list-item">
-                                  <img src="assets/images/nodejs.svg" alt="rails-logo">
-                                  NodeJS</li>
-                            <li class="list-item">
-                                    <img src="assets/images/rails.svg" alt="rails-logo">
-                                    Rails</li>
-                          </ul>
-                        </li>
-                      </ul>
-                </section>
-                <section id="contact" class="contacts">
-                 <div>
-                  <form class="forms" action="https://formspree.io/f/mnqworab" method="POST">
-                      <h2 class="contactme-head">
-                        Contact me
-                      </h2>
-                      <p class="contactme-body">
-                        If you have an application
-                        you are interested in developing,
-                          a feature that you need built
-                          or a project that needs coding.
-                          I’d love to help with it </p>
-                        <input class="form-name" type="text" maxlength="30" placeholder="Full Name" required>
-                        <input class="form-email" type="email" name="email" placeholder="Email" required>
-                        <textarea class="form-message" name="message" maxlength="500" placeholder="Write your message here" required></textarea> <br>
-                        <p class="error"></p><br>
-                        <button class="submission" type="submit">Get in touch</button>
-                      </form>
-                  </div>
-                  </section>
-              </section>
-        </section>
-    </main>
-    <script src="script.js"></script>
+        <label for="languages" class="about-skill languages">
+          <h3>Languages</h3>
+          <i class="arrow fas fa-chevron-right"></i>
+          <div class="content">
+            <div class="content-item">
+              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
+              <p>JavaScript</p>
+            </div>
+            <div class="content-item">
+              <img src="https://icons-for-free.com/iconfiles/png/512/icon++html+icon-1320194800994962643.png"
+                class="content-icon" />
+              <p>HTML5</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://i0.wp.com/www.tutorialwebdesign.com.br/wp-content/uploads/2015/07/css3.jpg?fit=250%2C237"
+                class="content-icon" />
+              <p>CSS3</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZc936X7NVC1GjyOg5tvp_8lJYSLNv2pLpNw&usqp=CAU"
+                class="content-icon" />
+              <p>Ruby</p>
+            </div>
+          </div>
+        </label>
+        <label for="frameworks" class="about-skill frameworks">
+          <h3>Frameworks</h3>
+          <i class="arrow fas fa-chevron-right"></i>
+          <div class="content">
+            <div class="content-item">
+              <img src="https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png" class="content-icon" />
+              <p>React</p>
+            </div>
+            <div class="content-item">
+              <img src="https://p.kindpng.com/picc/s/25-255448_ruby-on-rails-logo-graphic-design-hd-png.png"
+                class="content-icon" />
+              <p>Rails</p>
+            </div>
+            <div class="content-item">
+              <img src="https://firebase.google.com/images/brand-guidelines/logo-logomark.png" class="content-icon" />
+              <p>Firebase</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://w7.pngwing.com/pngs/780/57/png-transparent-node-js-javascript-database-mongodb-native-miscellaneous-text-trademark.png"
+                class="content-icon" />
+              <p>NodeJs</p>
+            </div>
+          </div>
+        </label>
+        <label for="skills" class="about-skill skills">
+          <h3>Skills</h3>
+          <i class="arrow fas fa-chevron-right"></i>
+          <div class="content">
+            <div class="content-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQi5Xoq9eSa90UxHOOk1Y2xuzRPJ8BeX8CPRg&usqp=CAU"
+                class="content-icon" />
+              <p>Git</p>
+            </div>
+            <div class="content-item">
+              <img src="https://webpack.js.org/dcd5e077cf9f54ebe52d4f7ebe8c3080.png" class="content-icon" />
+              <p>Webpack</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcapC8q1mMPefb3NUdQu7Q4Jhg1xllu5gqkg&usqp=CAU"
+                class="content-icon" />
+              <p>Jest</p>
+            </div>
+            <div class="content-item">
+              <img src="https://rspec.info/images/logo_ogp.png" class="content-icon" />
+              <p>Rspec</p>
+            </div>
+            <div class="content-item">
+              <img src="https://miro.medium.com/max/3840/1*wsG43wOOFexWg_xa0CEhuQ.jpeg" class="content-icon" />
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </section>
+    <section id="contact" class="section section-contact section--blue section--round-tl">
+      <h2>Contact me</h2>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that
+        needs coding. I'd love to help with it.</p>
+      <form action="https://formspree.io/mnqworab" method="POST">
+        <input required placeholder="name" type="text" name="name">
+        <input required placeholder="email" type="email" name="_replyto">
+        <textarea required placeholder="Write your message here" name="message">
+        </textarea>
+        <input class="item-btn" type="submit" value="Get in Touch">
+      </form>
+      <div class="bg-animated">
+        <div class="roundd"></div>
+        <div class="roundd"></div>
+        <div class="element-4">
+          <svg class="straight" width="160" height="91" viewBox="0 0 160 91" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="11.4399" width="161.407" height="28.875" transform="rotate(23.34 11.4399 0)" fill="#7F8CFF" />
+          </svg>
+          <svg class="round" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="23.5" cy="23.5" r="23.5" fill="#FFF" />
+          </svg>
+        </div>
+        <div class="element-6">
+          <svg class="straight" width="109" height="65" viewBox="0 0 109 65" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.592773" y="42.2793" width="107.204" height="24.699" transform="rotate(-23.1765 0.592773 42.2793)"
+              fill="#7F8CFF" />
+          </svg>
+          <svg class="round" width="121" height="123" viewBox="0 0 121 123" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M120.696 32.8419C115.725 24.0178 108.746 16.4883 100.324 10.8631C91.9013 5.23791 82.2727 1.67518 72.2174 0.463359C62.1621 -0.748462 51.9628 0.424689 42.4452 3.88782C32.9276 7.35096 24.3594 13.0067 17.4342 20.3972C10.509 27.7877 5.42148 36.7051 2.58365 46.4275C-0.254168 56.1498 -0.762569 66.4038 1.09962 76.3592C2.9618 86.3146 7.14223 95.6916 13.3024 103.731C19.4626 111.77 27.4294 118.246 36.5577 122.633L48.5813 97.6185C43.3809 95.1189 38.8422 91.4297 35.3328 86.8498C31.8233 82.2698 29.4418 76.9278 28.3809 71.2562C27.32 65.5846 27.6096 59.7429 29.2263 54.2041C30.843 48.6653 33.7414 43.585 37.6866 39.3747C41.6319 35.1643 46.5133 31.9423 51.9354 29.9693C57.3576 27.9964 63.1681 27.328 68.8966 28.0184C74.6251 28.7088 80.1105 30.7385 84.9087 33.9431C89.7068 37.1478 93.6829 41.4373 96.5149 46.4644L120.696 32.8419Z"
+              fill="white" />
+          </svg>
+        </div>
+        <div class="element-7">
+          <svg class="straight" width="55" height="32" viewBox="0 0 55 32" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect y="22.3472" width="55.6001" height="9.94658" transform="rotate(-23.6989 0 22.3472)" fill="white" />
+          </svg>
+          <svg class="round" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.12998 0.682491C-0.0141202 5.70435 -0.0754779 11.3723 1.9594 16.4394C3.99428 21.5065 7.95872 25.5577 12.9806 27.7018C18.0024 29.8459 23.6704 29.9072 28.7375 27.8724C33.8046 25.8375 37.8558 21.873 39.9999 16.8512L2.12998 0.682491Z"
+              fill="#7F8CFF" />
+          </svg>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./index.js"></script>
 </body>
+
 </html>
