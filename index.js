@@ -1,14 +1,13 @@
 const ProjectsContent = {
   webmetrics: {
     title: 'Metrics WEBAPP',
-    subtitle: ['Microverse', 'React', 2023],
+    subtitle: ['Microverse', 'React', 2022],
     img: './images/portfolio1.png',
     body: `<div class="modal-body"><p>
     Metrics Webapp is a dynamic and interactive user interface created with react build with the most accurate financial data API, that show a user data from differents companies.
     </p>
     <hr/>
-    <p><strong>Metrics Webapp</strong> consists of a single page web app for browsing, searching, and studying Japanese Kanji.</p>
-    
+    <p><strong>Metrics Webapp</strong> consists of a single page web app for browsing, searching, and studying the metrics of many companies.</p>
 <p>For this project I chose Financial Modeling Prep,  Financial Modeling Prep is a new concept that informs the user about stock markets information (news, currencies and stock prices) about many organizations.</p>
 <p><strong>Features</strong></p>
 <ul>
@@ -49,36 +48,53 @@ const ProjectsContent = {
   blog: {
     title: 'BLOG',
     subtitle: ['Full-stack Developer', 'NexJS & React', 2023],
-    img: './images/portfolio2.png',
+    img: './images/portfolio2.jpg',
     body: `<div class="modal-body"><p>
-    A mobile-first SPA Rails and React web-app for remote meetups that let users create, favorite, and browse a catalog of meetings and groups. The API was built with Rails and the client with React and Redux.     </p>
+    Blog starter is a A statically generated blog example using Next.js, Markdown, and TypeScript. 
+    The blog posts in the example will be stored as local markdown files in the application's directory (not fetched from an external data source), so there will be the need to read the data from the file system.</p>
     <br/>
-    <p>This project is a SPA remote groups and meetups application with a Rails API and React client. An user can create a meetup group, schedule the frequency of the meetings, and the attendee limit per meeting. They can also browse all the groups, favorite them, and choose to join a group and, upon approval, join a meeting.</p>
+    <p>The TypeScript Markdown Blog is a full-featured blogging platform that allows users to create, edit, and publish blog posts using Markdown syntax. 
+    It is built using the TypeScript programming language and leverages the power and flexibility of Markdown for content creation.</p>
 
 <p><strong>Features</strong></p>
 <ul>
 <li>
 <p>
-Client-side routing
+Blog Post Management:
+ - Create, edit, and delete blog posts.
+ - Categorize posts with tags or categories for easy organization.
+ - Set featured images for posts displayed on the blog homepage
 </p>
 </li>
 <li>
 <p>
-Rails API
+Commenting System:
+- Allow readers to leave comments on blog posts.
+- Comment moderation options for blog administrators.
+- Threaded discussions for nested replies.
 </p>
 </li>
 <li>
 <p>
-Favorites page
+Responsive Design:
+- Mobile-friendly layout for optimal viewing on different devices.
+- Responsive images and media for improved user experience.
 </p>
 </li>
 <li>
 <p>
-Token-based authentication and athorizations
+SEO Optimization:
+- SEO-friendly URLs and meta tags for each blog post.
+- XML sitemap generation for search engine indexing.
+- Integration with social media platforms for easy sharing.
 </p>
 </li>
 <li>
-<p>Unit and integration testing</p>
+<p>
+Analytics and Metrics:
+- Track and analyze blog traffic using analytics tools.
+- Gather insights on popular posts, visitor demographics, and more.
+</p>
 </li>
 </ul>
 </div>
@@ -92,86 +108,83 @@ Token-based authentication and athorizations
     subtitle: ['Microverse', 'Full-stack', 2023],
     img: './images/portfolio3.png',
     body: `<div class="modal-body"><p>
-    A Phaser3 game with stored score data with Leaderboard API service and original assets that let users play as a tentacle sea creature and shoot/squeeze divers. 
+    PIERCEL-BUDGET is a mobile web application where a user can manage the budget, and can easily create an account, login and start managing his budget.
     <br/>
     <p>
-    In this project, I implemented a game with projectiles coming both from and towards the player, player sprite movement, enemy 'downward' movement, and collisions, with an oceanic theme.</p>
-    <p><strong>About the Game</strong></p>
+    In this project, I implemented a budget tracker system with many features that are listed below.</p>
+    <p><strong>About the budget tracker system</strong></p>
     <p>
-    From the depths consists of a shooter game with the twist that it happens under the sea instead of the in space.
-</p><p>
-    You control an ancient, squid-like, sea creature that has their domains invaded by humans, much to its demise.
-    </p><p>
-    The game's object is to get points from eliminating the humans and its machines, while keeping your hp, or health points, above zero.
-    </p><p>
-    All the art feature in this game is original if not indicated otherwise at the Attributions section.
+    
 </p>
 <p><strong>Features</strong></p>
 <ul>
 <li>
 <p>
-Shoot stuff!</p>
+Account creation</p>
 </li>
 <li>
 <p>
-Eat fish!</p>
+Category creation</p>
 </li>
 <li>
 <p>
-Squeeze humans slowly to their death!</p>
+Transaction creation!</p>
 </li>
 <li>
 <p>
-Battle a submarine!</p>
-</li>
-<li>
-<p>Wiggle a tentacle around</p>
-</li>
-<li>
-<p>Check if your score at the top of the LeaderBoard!</p>
+Budget Tracking
+</p>
 </li>
 </ul>
 </div>
 `,
   stack: ['Rails', 'JavaScript', 'Webpack'],
-  live: 'https://depths.web.app/',
-  repo: 'https://github.com/uryelah/from-the-depths',
+  live: 'https://budget-app-0eev.onrender.com',
+  repo: 'https://github.com/Piercel2022/budget_app',
   },
   space: {
     title: 'SPACE TRAVELER',
     subtitle: ['Microverse', 'JavaScript', 2022],
     img: 'images/portfolio4.png',
     body: `<div class="modal-body"><p>
-    A breakfast restaurant page with client-side which allows users to toggle between the restaurant about page, menu, and contact information.
+    Space Traveler's website was built with real live data from the SpaceX API. The application provides commercial and scientific space travel services that allow users to book rockets and join selected space missions
     <br/>
     <p><strong>About the Project</strong></p>
     <p>
-    This project is a dynamically rendered restaurant page. Each tab('home', 'contact', 'about', 'menu') is in its own javascript file at /src and imported to index.js to be rendered when a nav link is clicked. The adding and removing HTML from the page, as well as the entering and leaving CSS animation, are handled by the page factory methods from where each page is made.
+    This project is use the SpaceX API. Users book rockets and join selected space missions. Space Traveler's website was built with real live data from the SpaceX API.
     </p>
 <p><strong>Features</strong></p>
 <ul>
 <li>
 <p>
-Neumorphic design</p>
+There are many components like: Rockets, Dragons and Missions
 </p>
 </li>
 <li>
 <p>
-Pure CSS animation and interactions</p>
+A user can make a reservation of the Rocket
+</p>
 </li>
 <li>
 <p>
-Client side pagination</p>
+The profile page of the user show the data like:
+- The reserved rockets
+- The reserved dragons
+- the joined missions
+<li>
+<p>
+The mission's page of the app show a more details about the app
+</p>
 </li>
 </ul>
 </div>`,
-  stack: ['JavaScript', 'Webpack'],
+  stack: ['JavaScript', 'Webpack', 'Redux', 'React'],
   live: 'https://spacetraveleryun.netlify.app/',
   repo: 'https://github.com/Piercel2022/Space-Traveler',
   },
   tic: {
     title: 'Tic Tac Toe',
-    subtitle: ['React', 'JavaScript', 2023],
+    subtitle: ['Full-stack Developer', 'JavaScript', 2023],
     img: './images/portfolio5.png',
     body: `<div class="modal-body"><p>
     A react version of the traditional Tic Tac Toe that let's two players have matches on the browser. 
@@ -224,54 +237,8 @@ Simplicity: Tic-tac-toe is a straightforward game that is easy to learn and unde
 </ul>
 </div>`,
   stack: ['React', 'JavaScript', 'Netlify'],
+  live: 'https://titato23.netlify.app/',
   repo: 'https://github.com/Piercel2022/tic-tac-toe',
-  },
-  flag: {
-    title: 'Where in the world?',
-    subtitle: ['Project', 'React', 2020],
-    img: './imgs/06.png',
-    body: `<div class="modal-body"><p>
-    This project is a simple SPA country database made with the data from REST Countries API.
-    <br/>
-    <p><strong>About the Project</strong></p>
-    <p>
-    It was made mainly with React, Material UI, and Redux, and deployed with Firebase. You can use any JavaScript framework/library on the front-end such as React.
-    </p>
-<p><strong>Features</strong></p>
-<ul>
-<li>
-<p>
-See all countries from the API on the homepage</p>
-</p>
-</li>
-<li>
-<p>
-Search for a country using an <em>input</em> field</p>
-</li>
-<li>
-<p>
-Filter countries by region</p>
-</li>
-<li>
-<p>
-Click on a country to see more detailed information on a separate page
-</p>
-</li>
-<li>
-<p>
-Click through to the border countries on the detail page
-</p>
-</li>
-<li>
-<p>
-Toggle the color scheme between light and dark mode
-</p>
-</li>
-</ul>
-</div>`,
-  stack: ['React', 'Material UI'],
-  repo: 'https://github.com/uryelah/country-flags',
-  live: 'https://countries-db.web.app/',
   },
 };
 
