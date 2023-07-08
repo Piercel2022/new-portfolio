@@ -41,9 +41,9 @@ const ProjectsContent = {
 </ul>
 </div>
 `,
-  stack: ['React', 'Redux', 'JavaScript'],
-  live: 'https://metrics2022.netlify.app/',
-  repo: 'https://github.com/Piercel2022/metrics-webapp',
+    stack: ['React', 'Redux', 'JavaScript'],
+    live: 'https://metrics2022.netlify.app/',
+    repo: 'https://github.com/Piercel2022/metrics-webapp',
   },
   blog: {
     title: 'BLOG',
@@ -99,9 +99,9 @@ Analytics and Metrics:
 </ul>
 </div>
 `,
-  stack: ['NextJS', 'Markdown', 'TypeScript'],
-  live: 'https://react-rails.netlify.app/',
-  repo: 'https://github.com/Piercel2022/Blog-starter',
+    stack: ['NextJS', 'Markdown', 'TypeScript'],
+    live: 'https://react-rails.netlify.app/',
+    repo: 'https://github.com/Piercel2022/Blog-starter',
   },
   budget: {
     title: 'PIERCEL-BUDGET',
@@ -138,9 +138,9 @@ Budget Tracking
 </ul>
 </div>
 `,
-  stack: ['Rails', 'JavaScript', 'Webpack'],
-  live: 'https://budget-app-0eev.onrender.com',
-  repo: 'https://github.com/Piercel2022/budget_app',
+    stack: ['Rails', 'JavaScript', 'Webpack'],
+    live: 'https://budget-app-0eev.onrender.com',
+    repo: 'https://github.com/Piercel2022/budget_app',
   },
   space: {
     title: 'SPACE TRAVELER',
@@ -178,9 +178,9 @@ The mission's page of the app show a more details about the app
 </li>
 </ul>
 </div>`,
-  stack: ['JavaScript', 'Webpack', 'Redux', 'React'],
-  live: 'https://spacetraveleryun.netlify.app/',
-  repo: 'https://github.com/Piercel2022/Space-Traveler',
+    stack: ['JavaScript', 'Webpack', 'Redux', 'React'],
+    live: 'https://spacetraveleryun.netlify.app/',
+    repo: 'https://github.com/Piercel2022/Space-Traveler',
   },
   tic: {
     title: 'Tic Tac Toe',
@@ -236,9 +236,9 @@ Simplicity: Tic-tac-toe is a straightforward game that is easy to learn and unde
 </li>
 </ul>
 </div>`,
-  stack: ['React', 'JavaScript', 'Netlify'],
-  live: 'https://titato23.netlify.app/',
-  repo: 'https://github.com/Piercel2022/tic-tac-toe',
+    stack: ['React', 'JavaScript', 'Netlify'],
+    live: 'https://titato23.netlify.app/',
+    repo: 'https://github.com/Piercel2022/tic-tac-toe',
   },
 };
 
@@ -251,7 +251,6 @@ window.onload = () => {
   const mobileLinks = document.getElementsByClassName('mobile-link');
   const backBtn = document.getElementById('back');
   const main = document.getElementById('main');
-  const items = document.getElementsByClassName('item');
   const readMoreBtn = document.getElementsByClassName('more');
   const modal = document.getElementById('modal');
   const clickCatcher = document.getElementById('click-catcher');
@@ -265,19 +264,19 @@ window.onload = () => {
   const modalLive = document.getElementById('modal-live');
   const modalRepo = document.getElementById('modal-repo');
 
-  clickCatcher.addEventListener('click', e => {
+  clickCatcher.addEventListener('click', () => {
     modal.classList.add('hide');
     main.classList.remove('blurred');
     clickCatcher.classList.add('hide');
   });
 
-  backBtn.addEventListener('click', e => {
+  backBtn.addEventListener('click', () => {
     modal.classList.add('hide');
     main.classList.remove('blurred');
     clickCatcher.classList.add('hide');
   });
 
-  closeIco.addEventListener('click', e => {
+  closeIco.addEventListener('click', () => {
     modal.classList.add('hide');
     main.classList.remove('blurred');
     clickCatcher.classList.add('hide');
@@ -289,7 +288,7 @@ window.onload = () => {
     main.classList.add('blurred');
   };
 
-  window.document.addEventListener('scroll', e => {
+  window.document.addEventListener('scroll', (e) => {
     if (e.target.scrollingElement.scrollTop > 35) {
       nav.classList.add('shadow-1');
     } else {
@@ -308,14 +307,14 @@ window.onload = () => {
     main.classList.remove('blurred');
   });
 
-  Array.from(mobileLinks).forEach(link => {
+  Array.from(mobileLinks).forEach((link) => {
     link.addEventListener('click', () => {
       navMobile.classList.add('hide');
       main.classList.remove('blurred');
     });
   });
 
-  Array.from(readMoreBtn).forEach(item => {
+  Array.from(readMoreBtn).forEach((item) => {
     item.addEventListener('click', () => {
       // change content of modal
       modalTitle.innerText = ProjectsContent[item.dataset.item].title;
@@ -345,13 +344,13 @@ window.onload = () => {
     });
   });
 
-  Array.from(dropDowns).forEach(drop => {
+  Array.from(dropDowns).forEach((drop) => {
     drop.addEventListener('click', () => {
-      let dropInput = document.getElementById(drop.attributes.for.nodeValue);
+      const dropInput = document.getElementById(drop.attributes.for.nodeValue);
       if (dropInput.checked) {
         setTimeout(() => {
           document.querySelector('#null').click();
-        })
+        });
       }
     });
   });
