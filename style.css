@@ -1281,9 +1281,9 @@ li.nav-link.nav-expand {
 
 @media only screen and (max-width: 522px) {
   #project-5 {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
