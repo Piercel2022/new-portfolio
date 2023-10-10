@@ -107,9 +107,9 @@ Analytics and Metrics:
   sushi: {
     title: 'SUSHI FOR YOU',
     subtitle: ['Asian Market', 'Front-end', 2023],
-    img: './images/Sushi.png',
+    img: './images/sushi-5.png',
     body: `<div class="modal-body"><p>
-    Welcome to "SushiForYou: Exquisite Japanese Sushi Experience"! 
+    Welcome to "SushiForYou: Exquisite Japanese Sushi Experience"!
     As you land on our homepage, you'll be captivated by stunning imagery showcasing the artistry and delicacy of Japanese sushi.
     <br/>
     <p>
