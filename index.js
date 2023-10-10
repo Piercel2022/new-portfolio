@@ -104,16 +104,17 @@ Analytics and Metrics:
     live: 'https://car-hub-three-nu.vercel.app/',
     repo: 'https://github.com/Piercel2022/car_hub/tree/dev',
   },
-  budget: {
-    title: 'PIERCEL-BUDGET',
-    subtitle: ['Microverse', 'Full-stack', 2023],
-    img: './images/portfolio3.png',
+  sushi: {
+    title: 'SUSHI FOR YOU',
+    subtitle: ['Asian Market', 'Front-end', 2023],
+    img: './images/Sushi.png',
     body: `<div class="modal-body"><p>
-    PIERCEL-BUDGET is a mobile web application where a user can manage the budget, and can easily create an account, login and start managing his budget.
+    Welcome to "SushiForYou: Exquisite Japanese Sushi Experience"! 
+    As you land on our homepage, you'll be captivated by stunning imagery showcasing the artistry and delicacy of Japanese sushi.
     <br/>
     <p>
-    In this project, I implemented a budget tracker system with many features that are listed below.</p>
-    <p><strong>About the budget tracker system</strong></p>
+    This project,  implement a full-featured website that show differents sushi recipes.</p>
+    <p><strong>About the sushi website</strong></p>
     <p>
     
 </p>
@@ -121,27 +122,27 @@ Analytics and Metrics:
 <ul>
 <li>
 <p>
-Account creation</p>
+Explore Food</p>
 </li>
 <li>
 <p>
-Category creation</p>
+Japanishe Sushi</p>
 </li>
 <li>
 <p>
-Transaction creation!</p>
+Japanishe Drinks</p>
 </li>
 <li>
 <p>
-Budget Tracking
+Show order
 </p>
 </li>
 </ul>
 </div>
 `,
-    stack: ['Rails', 'JavaScript', 'Webpack'],
-    live: 'https://budget-app-0eev.onrender.com',
-    repo: 'https://github.com/Piercel2022/budget_app',
+    stack: ['Html5', 'Css3', 'Css-animations'],
+    live: 'https://sushiforyou.netlify.app/',
+    repo: 'https://github.com/Piercel2022/sushiforyou',
   },
   space: {
     title: 'SPACE TRAVELER',
