@@ -37,7 +37,7 @@ REQUIRED SECTIONS:
 - [📝 License](#license)
 
 
-**[Portfolio]** is a website  to showcase my extensive collection of creative design projects. With a seamless blend of aesthetics and functionality, my website portfolio serves as a visual representation of my skills and expertise in Full-stack web development. From captivating branding projects to innovative web designs, each showcased work.
+**Portfolio** is a website  to showcase my extensive collection of creative design projects. With a seamless blend of aesthetics and functionality, my website portfolio serves as a visual representation of my skills and expertise in Full-stack web development. From captivating branding projects to innovative web designs, each showcased work.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,18 +46,15 @@ REQUIRED SECTIONS:
 <details>
   <summary>Language</summary>
   <ul>
-    <li><a href="https://www.rubyonrails.org/">Rails</a></li>
+    <li><a href="https://html.spec.whatwg.org/">HTML5</a></li>
   </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
   <ul>
-    <li><a href="https://nextjs.org//">Next.js</a></li>
+    <li><a href="https://www.w3.org/Style/CSS">CSS3</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://tc39.es/ecma262/">Javascript</a></li>
   </ul>
 </details>
-
-
 
 
 ### Key Features <a name="key-features"></a>
