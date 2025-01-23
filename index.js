@@ -45,25 +45,26 @@ const ProjectsContent = {
     live: 'https://metrics2022.netlify.app/',
     repo: 'https://github.com/Piercel2022/metrics-webapp',
   },
-  blog: {
-    title: 'BLOG',
+  car_hub: {
+    title: 'CarHub',
     subtitle: ['Full-stack Developer', 'NexJS & React', 2023],
-    img: './images/portfolio2.jpg',
+    img: './images/car_hub.png',
     body: `<div class="modal-body"><p>
-    Blog starter is a A statically generated blog example using Next.js, Markdown, and TypeScript. 
-    The blog posts in the example will be stored as local markdown files in the application's directory (not fetched from an external data source), so there will be the need to read the data from the file system.</p>
+    Welcome to our cutting-edge Next.js web application, dedicated to presenting an exquisite array of car models for you to explore and order.
+    </p>
     <br/>
-    <p>The TypeScript Markdown Blog is a full-featured blogging platform that allows users to create, edit, and publish blog posts using Markdown syntax. 
-    It is built using the TypeScript programming language and leverages the power and flexibility of Markdown for content creation.</p>
+    <p>
+    As you navigate our user-friendly platform, you'll find a meticulously curated selection of cars, each representing the epitome of style, technology, and performance.
+    </p>
 
 <p><strong>Features</strong></p>
 <ul>
 <li>
 <p>
-Blog Post Management:
- - Create, edit, and delete blog posts.
- - Categorize posts with tags or categories for easy organization.
- - Set featured images for posts displayed on the blog homepage
+Fetch Cars  from RapidApi:
+ - Cars are data shown to the User Interface.
+ - The user interface fetch cars data from API
+ - Set featured images for cars displayed on the  homepage
 </p>
 </li>
 <li>
@@ -99,20 +100,21 @@ Analytics and Metrics:
 </ul>
 </div>
 `,
-    stack: ['NextJS', 'Markdown', 'TypeScript'],
-    live: 'https://react-rails.netlify.app/',
-    repo: 'https://github.com/Piercel2022/Blog-starter',
+    stack: ['NEXTJS', 'RAPIDAPI', 'TypeScript', 'TAILWINDCSS'],
+    live: 'https://car-hub-three-nu.vercel.app/',
+    repo: 'https://github.com/Piercel2022/car_hub/tree/dev',
   },
-  budget: {
-    title: 'PIERCEL-BUDGET',
-    subtitle: ['Microverse', 'Full-stack', 2023],
-    img: './images/portfolio3.png',
+  sushi: {
+    title: 'SUSHI FOR YOU',
+    subtitle: ['Asian Market', 'Front-end', 2023],
+    img: './images/sushi-5.png',
     body: `<div class="modal-body"><p>
-    PIERCEL-BUDGET is a mobile web application where a user can manage the budget, and can easily create an account, login and start managing his budget.
+    Welcome to "SushiForYou: Exquisite Japanese Sushi Experience"!
+    As you land on our homepage, you'll be captivated by stunning imagery showcasing the artistry and delicacy of Japanese sushi.
     <br/>
     <p>
-    In this project, I implemented a budget tracker system with many features that are listed below.</p>
-    <p><strong>About the budget tracker system</strong></p>
+    This project,  implement a full-featured website that show differents sushi recipes.</p>
+    <p><strong>About the sushi website</strong></p>
     <p>
     
 </p>
@@ -120,27 +122,27 @@ Analytics and Metrics:
 <ul>
 <li>
 <p>
-Account creation</p>
+Explore Food</p>
 </li>
 <li>
 <p>
-Category creation</p>
+Japanishe Sushi</p>
 </li>
 <li>
 <p>
-Transaction creation!</p>
+Japanishe Drinks</p>
 </li>
 <li>
 <p>
-Budget Tracking
+Show order
 </p>
 </li>
 </ul>
 </div>
 `,
-    stack: ['Rails', 'JavaScript', 'Webpack'],
-    live: 'https://budget-app-0eev.onrender.com',
-    repo: 'https://github.com/Piercel2022/budget_app',
+    stack: ['Html5', 'Css3', 'Css-animations'],
+    live: 'https://sushiforyou.netlify.app/',
+    repo: 'https://github.com/Piercel2022/sushiforyou',
   },
   space: {
     title: 'SPACE TRAVELER',
